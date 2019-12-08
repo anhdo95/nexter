@@ -1,0 +1,23 @@
+.feature {
+  display: grid;
+  grid-template-rows: 4.5rem;
+  grid-template-columns: min-content 1fr;
+  grid-gap: .5rem 1.5rem;                       
+  align-content: center;
+
+  &__heading{
+    align-self: center;
+  }
+
+  &__icon {
+    grid-row: 1 / span 2;
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: $color-primary;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $color-grey-dark-1;
+  }
+}
