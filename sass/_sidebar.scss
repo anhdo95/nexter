@@ -1,3 +1,4 @@
 .sidebar {
+  grid-area: 1 / sidebar-start / -1 / sidebar-end;
   background-color: $color-primary;
 }
