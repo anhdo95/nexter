@@ -21,3 +21,22 @@
     color: $color-grey-dark-1;
   }
 }
+
+.btn {
+  padding: 1.5rem 2.5rem;
+  font-size: 1.6rem;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  &--md {
+    font-size: 1.8rem;
+  }
+}
