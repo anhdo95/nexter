@@ -1,4 +1,8 @@
 .homes {
   grid-column: center-start / center-end;
-  background-color: $color-grey-light-2
+  padding: 10vw 0;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-gap: 6rem;
 }

@@ -22,10 +22,72 @@
   }
 }
 
+.home {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem 1rem;
+
+  font-size: 1.6rem;
+  color: $color-grey-dark-1;
+  background-color: $color-grey-light-1;
+
+  &__picture-box {
+    grid-area: 1 / 1 / 2 / -1;
+    line-height: 0;
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    fill: $color-primary;
+    
+    &--heart {
+      grid-area: 1 / 2 / 2 / -1;
+      justify-self: end;
+      margin: 1rem;
+    }
+  }
+
+  &__title {
+    grid-area: 1 / 1 / 2 / -1;
+    justify-self: center;
+    align-self: end;
+
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+    background-color: $color-secondary;
+
+    transform: translateY(50%);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+
+    &--location,
+    &--room {
+      margin-top: 2rem;
+    }
+  }
+
+  &__button {
+    grid-column: 1 / -1;
+  }
+}
+
 .btn {
   padding: 1.5rem 2.5rem;
   font-size: 1.6rem;
   border: none;
+  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -34,6 +96,10 @@
   &--primary {
     color: $color-white;
     background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
   }
 
   &--md {

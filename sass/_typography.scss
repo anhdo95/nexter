@@ -22,6 +22,10 @@
   @extend .heading;
 
   font-size: 1.6rem;
+
+  &--light { 
+    color: $color-grey-light-1;
+  }
 }
 
 .heading-4 {
