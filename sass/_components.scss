@@ -106,3 +106,49 @@
     font-size: 1.8rem;
   }
 }
+
+.nav {
+  &__button {
+    width: 4.5rem;
+    height: 4rem;
+    background-color: transparent;
+    border: none;
+    
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    display: block;
+    width: inherit;
+    height: .25rem;
+    background-color: $color-white;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: inherit;
+      height: inherit;
+      background-color: $color-white;
+    }
+
+    &::before {
+      top: -1.5rem;
+    }
+
+    &::after {
+      top: 1.5rem;
+    }
+  }
+}
+
+  
+
+  
+
+  

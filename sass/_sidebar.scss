@@ -1,4 +1,6 @@
 .sidebar {
   grid-area: 1 / sidebar-start / -1 / sidebar-end;
+  padding-top: 2rem;
+  text-align: center;
   background-color: $color-primary;
 }
