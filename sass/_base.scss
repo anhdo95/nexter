@@ -24,7 +24,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content 40vw repeat(3, min-content);
+  grid-template-rows: 
+    [sidebar-top] 6rem
+    [sidebar-bottom header-top] calc(100vh - 6rem)
+    [header-bottom realtors-top] min-content
+    [realtors-bottom features-top] min-content
+    [features-bottom story-content-top] min-content 
+    [story-content-bottom story-pictures-top] 60vw 
+    [story-pictures-bottom homes-top] repeat(3, min-content)
+    [footer-bottom];
   grid-template-columns: 
     [full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 
@@ -32,7 +40,14 @@ body {
     [full-end];
 
   @include respond($xs) {
-    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-rows: 
+      [sidebar-top] 6rem
+      [sidebar-bottom header-top] 80vh
+      [header-bottom features-top] min-content
+      [features-bottom story-content-top] min-content 
+      [story-content-bottom story-pictures-top] 60vw
+      [story-pictures-bottom homes-top] repeat(3, min-content)
+      [footer-bottom];
   }
 
   @include respond($s) {
