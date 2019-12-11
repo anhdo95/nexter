@@ -10,7 +10,8 @@
   background-position: center;
 
   display: grid;
-  grid-template: 1fr min-content 6rem 1fr / minmax(min-content, max-content);
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   grid-gap: 2rem;
   justify-items: start;
   align-items: center;
