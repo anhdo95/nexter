@@ -1,6 +1,13 @@
 .sidebar {
-  grid-area: 1 / sidebar-start / -1 / sidebar-end;
-  padding-top: 2rem;
-  text-align: center;
+  grid-area: 1 / 1 / 2 / -1;
   background-color: $color-primary;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  
+  @include respond($s) {
+    grid-area: 1 / sidebar-start / -1 / sidebar-end;
+    padding-top: 2rem;
+    text-align: center;
+  }
 }
